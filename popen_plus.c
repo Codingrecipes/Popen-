@@ -138,8 +138,6 @@ int popen_plus_close(struct popen_plus_process *process)
     
     free(process);
     
-    process = NULL;
-    
     return (pid == -1 ? -1 : pstat);
 }
 
