@@ -22,3 +22,5 @@ To kill a process:
 
 popen_plus_kill(process);
 popen_plus_close(process);
+
+Terminate is the same...
