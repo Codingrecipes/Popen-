@@ -1,4 +1,4 @@
-This is a little popen implementation which will make it easier to kill processes and will give you access to the PID of the process, I donÕt know why they didnÕt do this in popen but IÕm sure they had good reasons because those guys are way too smartÉ
+This is a little popen implementation which will make it easier to kill processes and will give you access to the PID of the process, I don't know why they didn't do this in popen but I'm sure they had good reasons because those guys are way too smartÉ
 
 This code was inspired by many sources and I think I perfected it, although you might find bugs or issues and if you do, please let me know if the comments section.
 You can use it like so:
@@ -8,14 +8,14 @@ if (!process) {
      /* Failed do something and return or exit */
      return -1;
 }
- 
+
 int MAX_BUFFER = 256;
 char buffer[256];
- 
+
 while (!feof(process->read_fp))
      if (fgets(buffer, MAX_BUFFER, process->read_fp) != NULL)
           printf("%s\n", buffer);
- 
+
 popen_plus_close(process);
 
 To kill a process:
