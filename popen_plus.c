@@ -160,3 +160,23 @@ int popen_plus_kill_by_id(int process_id)
     
     return 0;
 }
+
+int popen_plus_terminate(struct popen_plus_process *process)
+{
+    char command[64];
+    
+    sprintf(command, "kill -TERM %d", process->pid);
+    system(command);
+    
+    return 0;
+}
+
+int popen_plus_terminate_with_id(int process_id)
+{
+    char command[64];
+    
+    sprintf(command, "kill -TERM %d", process_id);
+    system(command);
+    
+    return 0;
+}

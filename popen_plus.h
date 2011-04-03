@@ -41,5 +41,7 @@ struct popen_plus_process *popen_plus(const char *command);
 int popen_plus_close(struct popen_plus_process *process);
 int popen_plus_kill(struct popen_plus_process *process);
 int popen_plus_kill_by_id(int process_id);
+int popen_plus_terminate(struct popen_plus_process *process);
+int popen_plus_terminate_with_id(int process_id);
 
 #endif
