@@ -12,8 +12,8 @@
  **    May you share freely, never taking more than you give.
  **/
 
-#ifndef POPEN_PLUS
-#define POPEN_PLUs
+#ifndef POPEN_PLUS_H
+#define POPEN_PLUS_H
 
 #include <sys/types.h>
 #include <fcntl.h>
